@@ -1,0 +1,31 @@
+{
+  "statusBarOrder": [],
+  "ribbonBarOrder": [],
+  "fileExplorerOrder": {
+    "/": [
+      "Devel",
+      "Tools",
+      "Beatmania IIDX",
+      "Quick Start.md",
+      "Index.md"
+    ],
+    "Beatmania IIDX": [
+      "Beatmania IIDX/Detailed Support Report.md",
+      "Beatmania IIDX/Confirmed Issues.md"
+    ],
+    "Devel": [
+      "Devel/Archive",
+      "Devel/Beatmania",
+      "Devel/Feature support",
+      "Devel/Patches",
+      "Devel/TODO.md",
+      "Devel/Config File Specification.md",
+      "Devel/Game Support.md",
+      "Devel/Host Userspace Integration.md"
+    ]
+  },
+  "actionBarOrder": {},
+  "autoHide": true,
+  "autoHideDelay": 2000,
+  "dragDelay": 200
+}
