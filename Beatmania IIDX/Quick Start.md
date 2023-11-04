@@ -78,7 +78,7 @@ That doesn't mean you have to use them as it's mostly automatization and integra
 >mv "/var/games/iidx/requirements/bmsw/bmsound-"* "/var/games/iidx/.steam/root/steamapps/common/Beatmania IIDX 28/contents/modules/"
 >mv "/var/games/iidx/requirements/spicetools/spice"* "/var/games/iidx/.steam/root/steamapps/common/Beatmania IIDX 28/contents/"
 >```
->9. Apply wine patches through <a target="" href="patcher/">provided patcher</a> if there are any, in case of `LDJ-20210915` you need a Bistrover specific fix
+>9. Apply wine patches through <a target="" href="patcher/">provided patcher</a> if there are any (do not enable wasapi shared patch), in case of `LDJ-20210915` you need a Bistrover specific fix
 >10. Set your monitor to target refresh rate (so 120hz for this guide), example below assumes you want game on main monitor
 >```shell
 >xrandr
@@ -107,13 +107,13 @@ That doesn't mean you have to use them as it's mostly automatization and integra
 * [bmsound_wine](https://codeberg.org/nixac/bmsound_wine) (acts as bridge between spice and pipewire)
 * optional, although recommended [extra tooling](https://codeberg.org/nixac/automatization)
 * optional, although asumed in quick guide steam installation (steam installs itself in `~/.steam`, if `~/.steam/root` exists that should be enough)
+* optional, although recommended kernel with features utilized by these kind of games (for arch, linux-zen should be all you need)
 * implies [common system libraries used by wine](https://github.com/lutris/docs/blob/master/WineDependencies.md#archendeavourosmanjaroother-arch-derivatives) being pre-installed (you probably have done this already, unless you haven't worked with proton/wine directly before)
 * implies Xorg (although wayland should work, listed [workarounds](Confirmed%20Issues.md) may target X11)
 * implies Nvidia (although AMD/Intel may work, listed [workarounds](Confirmed%20Issues.md) may be nvidia specific)
 
 # Known quirks
 Lists things with no known resolution at the moment, you may consider these as demerits compared to windows setup.
-* windowed modes(`-w`)  don't detect touch events from subscreen, [subscreen works fine with `-touchemuforce` and fullscreen](Confirmed%20Issues.md#Subscreen%20doesn't%20detect%20input)
-* IIDX 30 Resident's subscreen is missing most functionality
+* IIDX 30 Resident's music selection video missing
 * multiple older titles don't support video playback
 * all titles don't support effector

@@ -97,15 +97,16 @@ Resolved
 
 
 # Game keeps maxing one of CPU threads at idle
->[!attention]- **State**
->Known and intentional (target for refactor)
+>[!done]- **State**
+>Known and intentional, alternative endpoint available
 
 >[!question]- **Cause**
 >This is caused by [bmsound_wine](/Tools/bmsound_wine)'s "notif_spice" profile endpoint
 
 >[!todo] **Solution**
 >> [!attention] 　
->> None, until [this refactor is completed](https://codeberg.org/nixac/bmsound_wine/issues/2)
+>> You can use alternative audio endpoint by defining ["signal_spice" profile through config](/Devel/Config%20File%20Specification#Using%20alternative%20audio%20backends)
+>> This endpoint will become the default once [this refactor is completed](https://codeberg.org/nixac/bmsound_wine/issues/2)
 >> Since winelib had issues with calling back to wine's address space from unix thread, "notif_callback" endpoint profile (more optimal for use with spice) cannot be used
 >> To keep latency penalty at the lowest, alternating busy lock between threads was introduced as a temporary solution
 >> CPU scheduling on most kernels should handle this well enough for end-user to not notice any additional stutters

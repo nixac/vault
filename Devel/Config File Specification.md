@@ -124,6 +124,20 @@
 >}
 >```
 
+## Using alternative audio backends
+>[!warning]
+> Default endpoint should be considered usually the most reliable one
+
+>[!example]- linux.json
+>```json
+>{
+>    "audio": {
+>        "profile": "signal_spice"
+>    }
+>}
+>```
+
+
 ## Using vanilla proton in separate prefix
 >[!warning]
 > This usage is not properly tested and therefore considered unsupported
