@@ -136,3 +136,15 @@ Resolved
 >While wine makes sure to map libraries to their preferred base addresses where possible, in cases with multiple libraries requesting the same VA, next libraries with the same base address will be reallocated
 >This is the case for example with `bm2dx.dll` and `avs2-core.dll`, which both target the same address (with `avs2-core.dll` loading first, while author probably intended for `bm2dx.dll` to map there instead)
 
+
+# Keysound beginning cut off when playing
+
+>[!missing]- **State**
+>Unresolved, possibly an audio<->input sync issue of some kind, alternatively scheduling
+
+>[!question]- **Cause**
+>Unkown, may be caused by bmsound-wine
+
+>[!todo] **Solution**
+>> [!attention] Tracked [here](https://codeberg.org/nixac/bmsound_wine/issues/6), currently no solution
+

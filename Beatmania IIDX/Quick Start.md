@@ -28,6 +28,7 @@ That doesn't mean you have to use them as it's mostly automatization and integra
 >##    automatization utils (skip if you have your own setup in mind)
 >cd /var/games/iidx
 >git clone https://codeberg.org/nixac/automatization --recurse-submodules
+>sudo pacman -S jq
 >##    proton ge (includes patching)    ##
 >cd /var/games/iidx/requirements
 >wget https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton8-16/GE-Proton8-16.tar.gz
